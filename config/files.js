@@ -13,6 +13,7 @@ module.exports = function(lineman) {
         "vendor/js/jquery.js",
         "vendor/js/underscore.js",
         "vendor/js/backbone.js",
+        "vendor/js/react.js",
         "vendor/js/**/*.js"
       ],
       app: [
