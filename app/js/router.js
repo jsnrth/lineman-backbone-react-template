@@ -6,20 +6,19 @@ window.app.router = Backbone.Router.extend({
   },
 
   login: function() {
-    this.renderPage(window.app.views.LoginPage, {
+    React.renderComponent(window.app.components.LoginPage({
       AuthenticationService: window.app.services.AuthenticationService
-    });
+    }), this.mountNode());
   },
 
   home:  function() {
-    this.renderPage(window.app.views.HomePage, {
+    React.renderComponent(window.app.components.HomePage({
       AuthenticationService: window.app.services.AuthenticationService
-    });
+    }), this.mountNode());
   },
 
-  renderPage: function(PageClass, options) {
-    var page = new PageClass(options);
-    $("#view").empty().append(page.render().el);
+  mountNode: function(){
+    return document.getElementById('view');
   }
 });
 
