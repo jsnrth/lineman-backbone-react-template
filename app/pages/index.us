@@ -7,7 +7,7 @@
   <body>
     <div class="row">
       <div class="large-12">
-        <h1>A Lineman Backbone Setup</h1>
+        <h1>A Lineman Backbone + React Setup</h1>
         <div id="view"></div>
       </div>
     </div>
